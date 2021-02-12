@@ -41,7 +41,7 @@ body {
     height: 150vh;
     width: 100%;
     top: 0;
-    bottom: 0;
+    /*bottom: 0;*/
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;

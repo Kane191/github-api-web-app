@@ -1,0 +1,23 @@
+How to run the following program on local host.
+
+Step 1: Create an .env file with details for phpmyadmin ie
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=github
+DB_USERNAME= "your username"
+DB_PASSWORD= "your password"
+
+Step 2: Once in the folder of your project, run the command: 
+
+php artisan migrate
+
+Step 3: Now your code is ready to run. To run enter this command in your terminal:
+
+php artisan serve
+
+
+Note: To view the details of a certain repository, click on the number under ID column.
+
+Hope to hear from you soon.

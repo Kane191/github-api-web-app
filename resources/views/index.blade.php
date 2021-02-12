@@ -4,7 +4,7 @@
 @section('content')
     <div class="bg-img">
         <div class="row center">
-            <div class="col-lg-5 content">
+            <div class="col-lg-9 content">
 
                 <ul class="nav nav-tabs">
                     <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#others">Repositories</a></li>

@@ -4,9 +4,9 @@
 @section('content')
     <div class="bg-img">
         <div class="row center">
-            <div class="col-lg-5 content">
-                <div class="row">
-                    <div class="col-lg-6">
+            <div class="col-lg-7 content">
+{{--                <div class="row">--}}
+{{--                    <div class="col-lg-6">--}}
                         <div class="card">
                             <div class="card-header">
                                 {{$repo['full_name']}}
@@ -18,8 +18,8 @@
                                 <p>Watchers : {{$repo['watchers_count']}}</p><br>
                                 <p>Forks : {{$repo['forks_count']}}</p><br>
                             </div>
-                        </div>
-                    </div>
+{{--                        </div>--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>
