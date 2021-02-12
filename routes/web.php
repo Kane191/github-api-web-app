@@ -18,6 +18,6 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::get('/','App\Http\Controllers\GithubController@index')->name('index');
-Route::get('/dd','App\Http\Controllers\GithubController@dd')->name('dd');
+//Route::get('/dd','App\Http\Controllers\GithubController@dd')->name('dd');
 Route::get('/details/{id}','App\Http\Controllers\GithubController@details')->name('details');
 Route::get('/favourite/{id}','App\Http\Controllers\GithubController@favourite')->name('favourite');
