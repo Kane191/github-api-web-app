@@ -10,7 +10,7 @@
                         <div class="card">
                             <div class="card-header">
                                 {{$repo['full_name']}}
-                                <div style="float: right"><i class="fa fa-star"></i>{{$repo['stargazers_count']}}</div>
+                                <div style="float: right"><i class="fa fa-star"></i> {{$repo['stargazers_count']}}</div>
                             </div>
                             <div class="card-body">
                                 <p>Description : {{$repo['description']}}</p><br>
