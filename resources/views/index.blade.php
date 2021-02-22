@@ -27,16 +27,25 @@
                                     </thead>
                                     <tbody>
                                     @foreach($repos as $repo)
-                                        @foreach($favourites as $favourite)
-                                            @if($repo['id'] !== $favourite->github_id)
-                                                <tr>
-                                                    <td><a href="{{route('details', $repo['id'])}}">{{$no++}}</a></td>
-                                                    <td>{{$repo['name']}}</td>
-                                                    <td>{{$repo['full_name']}}</td>
-                                                    <td><a class="btn btn-primary" href="{{route('favourite', $repo['id'])}}">Favourite</a> </td>
-                                                </tr>
-                                            @endif
-                                        @endforeach
+                                        @if(!$favourites->isEmpty())
+                                            @foreach($favourites as $favourite)
+                                                @if($repo['id'] !== $favourite->github_id)
+                                                    <tr>
+                                                        <td><a href="{{route('details', $repo['id'])}}">{{$no++}}</a></td>
+                                                        <td>{{$repo['name']}}</td>
+                                                        <td>{{$repo['full_name']}}</td>
+                                                        <td><a class="btn btn-primary" href="{{route('favourite', $repo['id'])}}">Favourite</a> </td>
+                                                    </tr>
+                                                @endif
+                                            @endforeach
+                                        @else
+                                            <tr>
+                                                <td><a href="{{route('details', $repo['id'])}}">{{$no++}}</a></td>
+                                                <td>{{$repo['name']}}</td>
+                                                <td>{{$repo['full_name']}}</td>
+                                                <td><a class="btn btn-primary" href="{{route('favourite', $repo['id'])}}">Favourite</a> </td>
+                                            </tr>
+                                        @endif
                                     @endforeach
                                     </tbody>
                                 </table>
