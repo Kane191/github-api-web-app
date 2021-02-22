@@ -31,7 +31,7 @@
     <title>@yield('title')</title>
     @yield('style')
 </head>
-<body>
+<body class="bg-img">
 {{--@include('Admin.layouts.navbar')--}}
 {{--@include('Admin.layouts.sidemenu')--}}
 

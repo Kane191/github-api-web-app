@@ -1,10 +1,19 @@
 @extends('layouts.master')
 
+@section('title')
+    Repositories
+@endsection
 
 @section('content')
-    <div class="bg-img">
+    <div class="">
         <div class="row center">
-            <div class="col-lg-9 content">
+            <div class="col-lg-9">
+
+                <card class="card bg-white my-5">
+                    <div class="card-body">
+                        <h3 class="text-dark ">All Github Repositories</h3>
+                    </div>
+                </card>
 
                 <ul class="nav nav-tabs">
                     <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#others">Repositories</a></li>
